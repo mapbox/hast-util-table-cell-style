@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 0.1.2
 
 - We're ok with end users on Node v4.
 
