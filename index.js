@@ -2,6 +2,7 @@
 
 var visit = require('unist-util-visit');
 
+var hasOwnProperty = Object.prototype.hasOwnProperty;
 var hastCssPropertyMap = {
   align: 'text-align',
   valign: 'vertical-align',
@@ -18,24 +19,30 @@ function visitor(node) {
   if (node.tagName !== 'tr' && node.tagName !== 'td' && node.tagName !== 'th') {
     return;
   }
-  Object.keys(hastCssPropertyMap).map(function (hastName) {
-    if (node.properties[hastName] === undefined) {
-      return;
+
+  var hastName;
+  var cssName;
+  for (hastName in hastCssPropertyMap) {
+    if (
+      !hasOwnProperty.call(hastCssPropertyMap, hastName) ||
+      node.properties[hastName] === undefined
+    ) {
+      continue;
     }
-    var cssName = hastCssPropertyMap[hastName];
+    cssName = hastCssPropertyMap[hastName];
     appendStyle(node, cssName, node.properties[hastName]);
     delete node.properties[hastName];
-  });
+  }
 }
 
 function appendStyle(node, property, value) {
   var prevStyle = (node.properties.style || '').trim();
   if (prevStyle && !/;\s*/.test(prevStyle)) {
-    prevStyle += ";";
+    prevStyle += ';';
   }
   if (prevStyle) {
-    prevStyle += " ";
+    prevStyle += ' ';
   }
-  var nextStyle = prevStyle + property + ": " + value + ";";
+  var nextStyle = prevStyle + property + ': ' + value + ';';
   node.properties.style = nextStyle;
 }
