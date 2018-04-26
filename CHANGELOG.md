@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Use ES5 for browser compatibility.
+
 ## 0.1.2
 
 - We're ok with end users on Node v4.
