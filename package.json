@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/hast-util-table-cell-style",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Transform deprecated styling attributes on HAST table cells to inline styles",
   "main": "index.js",
   "scripts": {

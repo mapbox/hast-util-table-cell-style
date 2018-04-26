@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 0.1.3
 
 - Use ES5 for browser compatibility.
 
