@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/mapbox/hast-util-table-cell-style#readme",
   "engines": {
-    "node": ">=4"
+    "node": ">=10"
   },
   "dependencies": {
     "unist-util-visit": "^1.3.0"

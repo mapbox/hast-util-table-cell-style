@@ -1,6 +1,6 @@
 # @mapbox/hast-util-table-cell-style
 
-[![Build Status](https://travis-ci.org/mapbox/hast-util-table-cell-style.svg?branch=master)](https://travis-ci.org/mapbox/hast-util-table-cell-style)
+[![Build Status](https://travis-ci.com/mapbox/hast-util-table-cell-style.svg?branch=main)](https://travis-ci.com/mapbox/hast-util-table-cell-style)
 
 Transform deprecated styling attributes on [HAST] table cells to inline styles.
 
