@@ -7,7 +7,7 @@ var hastCssPropertyMap = {
   align: 'text-align',
   valign: 'vertical-align',
   height: 'height',
-  width: 'width'
+  width: 'width',
 };
 
 module.exports = function tableCellStyle(node) {
