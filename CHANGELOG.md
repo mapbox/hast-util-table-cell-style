@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0
+
+- Upgrade to Node 12. Update dependencies.
+
 ## 0.1.3
 
 - Use ES5 for browser compatibility.
