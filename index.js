@@ -1,6 +1,6 @@
 'use strict';
 
-var visit = require('unist-util-visit');
+var visit = require('unist-util-visit').visit;
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 var hastCssPropertyMap = {
