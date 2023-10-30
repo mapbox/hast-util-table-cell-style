@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+
+- Update dependencies.
+
 ## 0.2.0
 
 - Upgrade to Node 12. Update dependencies.
