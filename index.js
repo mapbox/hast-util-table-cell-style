@@ -5,7 +5,7 @@ var visit = require('unist-util-visit');
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 var hastCssPropertyMap = {
   align: 'text-align',
-  valign: 'vertical-align',
+  vAlign: 'vertical-align',
   height: 'height',
   width: 'width',
 };
