@@ -1,3 +1,5 @@
+## NOTE: This repo is no longer maintained.
+
 # @mapbox/hast-util-table-cell-style
 
 [![Build Status](https://travis-ci.com/mapbox/hast-util-table-cell-style.svg?branch=main)](https://travis-ci.com/mapbox/hast-util-table-cell-style)
